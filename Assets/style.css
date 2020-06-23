@@ -1,0 +1,49 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.row {
+  width: 100vw;
+  padding: 2rem;
+}
+
+.column {
+  float: left;
+}
+
+#left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.text {
+  width: 30%;
+}
+
+#city {
+  font-size: 30px;
+}
+
+#center {
+  width: auto;
+}
+
+.weather-container {
+  height: 180px;
+  background-color: #f4f9ff;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.weather-span {
+  width: 100%;
+}
+
+.five-forecast {
+  padding-right: 25px;
+}
