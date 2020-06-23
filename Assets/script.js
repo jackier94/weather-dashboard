@@ -6,6 +6,11 @@ $(document).ready(function () {
   $(".query_btn").click(function () {
     var query_param = $(this).prev().val();
 
+    var date = moment();
+
+    $("#date").text(date.format("l"));
+    console.log(date);
+
     // var latitude = query_param.coord[0];
     // console.log(latitude);
 
@@ -13,6 +18,8 @@ $(document).ready(function () {
     //   "api.openweathermap.org/data/2.5/forecast?q={city name}&appid={your api key}";
 
     // console.log(query_param);
+
+    //some of this code is borrwed from the weather open map demo
 
     if ($(this).prev().attr("placeholder") == "City") {
       var weather =
@@ -57,7 +64,7 @@ $(document).ready(function () {
   //   /
 });
 
-// 5 weather forecast
+//attempting  5 weather forecast, missing for loop maybe????
 
 function forecast() {
   var query_param = $(this).prev().val();
